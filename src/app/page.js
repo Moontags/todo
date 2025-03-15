@@ -21,12 +21,12 @@ export default function Home() {
 
   const showMessage = (msg) => {
     setMessage(msg);
-    setTimeout(() => setMessage(""), 2000); // Poistuu pehmeämmin 2.5s kuluttua
+    setTimeout(() => setMessage(""), 2000); 
   };
 
   return (
     <div className="relative space-y-6">
-      {/* ✅ Ilmoitus animoituu sisään ja ulos eikä siirrä sisältöä */}
+ 
             <div
         className={`fixed top-12 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded-md shadow-md transition-opacity duration-600 ${
           message ? "opacity-100" : "opacity-0 pointer-events-none"
