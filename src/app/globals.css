@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.todo_list {
+  max-height: 400px; 
+  overflow-y: auto;  
+  scrollbar-width: thin; 
+  scrollbar-color: #88ab33 transparent;
+  padding-right: 5px;
+}
+
+.todo_list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todo_list::-webkit-scrollbar-thumb {
+  background: #88ab33;
+  border-radius: 3px;
+}
